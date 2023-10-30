@@ -26,9 +26,14 @@ def convert(list_of_letters: []) -> str:
     return morse_code_sentence
 
 
-# User input (all letters lowered)
-user_sentence = input('Enter the sentence to be converted into morse code: ').lower()
-sentence_as_list = list(user_sentence.strip())
-# print(sentence_as_list)
-output = convert(sentence_as_list)
-print(output)
+def main():
+    # User input (all letters lowered)
+    user_sentence = input('Enter the sentence to be converted into morse code: ').lower()
+    sentence_as_list = list(user_sentence.strip())
+    # print(sentence_as_list)
+    output = convert(sentence_as_list)
+    print(output)
+
+
+if __name__ == '__main__':
+    main()
